@@ -5,17 +5,18 @@
  */
 package dip.lab3.student.solution1;
 
+import java.util.Scanner;
+
 /**
  *
  * @author kevinjerke
  */
-public class ArrayInput implements Input{
-    public static String readln(String line) {
-       line = "Test";
-       return line;
-   }
-   
-   public String readln() {
-       return readln();
+public class ConsoleReader implements MessageInput{
+      
+    public String readMessage(){
+       System.out.println("Enter message");
+       
+       Scanner keyboard = new Scanner(System.in);
+       return keyboard.nextLine();
    }
 }

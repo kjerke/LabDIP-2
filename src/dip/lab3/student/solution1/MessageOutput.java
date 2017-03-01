@@ -9,6 +9,6 @@ package dip.lab3.student.solution1;
  *
  * @author kevinjerke
  */
-public interface Output {
+public interface MessageOutput {
     public abstract void writeln(String line);
 }

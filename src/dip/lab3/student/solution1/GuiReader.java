@@ -5,10 +5,17 @@
  */
 package dip.lab3.student.solution1;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author kevinjerke
  */
-public class ScreenReader {
+public class GuiReader implements MessageInput{
+
+    @Override
+    public String readMessage() {
+        return JOptionPane.showInputDialog(null, "Please enter message");
+    }
     
 }

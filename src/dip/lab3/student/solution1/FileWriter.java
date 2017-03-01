@@ -9,7 +9,12 @@ package dip.lab3.student.solution1;
  *
  * @author kevinjerke
  */
-public abstract class FileWriter implements Output{
+public class FileWriter implements MessageOutput{
+
+    @Override
+    public void writeln(String line) {
+
+    }
    
-    public abstract String FileWriter();
+
 }

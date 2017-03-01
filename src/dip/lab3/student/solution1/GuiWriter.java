@@ -5,17 +5,17 @@
  */
 package dip.lab3.student.solution1;
 
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author kevinjerke
  */
-public class MessageReader implements Input{
-      public String readln(){
-       System.out.println("Enter message");
-       
-       Scanner keyboard = new Scanner(System.in);
-       return keyboard.nextLine();
-   }
-}
+public class GuiWriter implements MessageOutput{
+
+    public void writeln(String line){
+         
+            JOptionPane.showMessageDialog(null, line);
+	}
+    }    
+

@@ -11,12 +11,15 @@ package dip.lab3.student.solution1;
  */
 public class Startup {
     public static void main(String[] args) {
-        Input input = new MessageReader();
-        Output output = new ConsoleWriter();
+        MessageInput input = new ConsoleReader();
+       
+        MessageOutput output = new ConsoleWriter();
         
-        Messager message1 = new Messager(input, output);
+        // MessageOutput output = new GuiWriter();
+
+        MessageService service = new MessageService(input, output);
         
-        message1.produceMessage();
+        service.produceMessage();
     }
 }
 
